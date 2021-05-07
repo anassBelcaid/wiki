@@ -12,11 +12,17 @@
 
 ## Linux
 - [Regex](Regex.md)
+- [Tutorial hacker](Tutorial hacker.md)
 
 ## Task Warrior
 - [TODOS](TODOS.md)
 
 
+## Programming languages
+
+- [C++](C++.md)
+- [ruby](ruby.md)
+- [dotfile](dotfile.md)
 
 
 
