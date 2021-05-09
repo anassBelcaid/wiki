@@ -74,7 +74,38 @@ tr  find_character replace_characer < filename
     - `tr -cd [:digit:]`  will remove antyhing but digits
 - remove non printable 
     - `tr -cd [:print:]`
+
+### sorting
+
+- `sort ` sort lexicographically 
+- `sort -n ` numerical data
+- `sort -r` : reverse order
+- `sort -t $'\t'`: specefiy delimiter
+- `sort -k 2`: specify field 
+
+### Uniq
+
+**Uniq** is used to remove consecutive occurrences in a given file.
+
+- `uniq -c` to indicate occurrences of each field
+- `uniq -d ` : display only duplicates 
+- `uniq -u`: display only unique lines
+- `uniq -w`: limit comparison to the first w character
+- `uniq -s`: skip the first s characters 
+- `uniq -i`: ignore case.
+- `uniq -f`: avoid comparing the first **f** fields.
     
+
+### Paste
+
+- `paste -s file`: join all the lines of a file using tab
+- `paste -s -d, file`: change the delimiter using **,** 
+- `paste - - < file`: paste using two columns
+- `paste -d"-," - - - < file`: paste using two different delimiters
+- `paste -d, file1 file2`: paste files (1, 2) in columns
+- `cat file2 | paste -d, file1 -`: same result
+- `cat -d'\n' file1 file2`: contcatnate in a single columns
+
 
 ## Resources
 
@@ -82,6 +113,7 @@ tr  find_character replace_characer < filename
 2. [handling input](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_08_02.html)
 3. [bash loops](https://www.cyberciti.biz/faq/bash-for-loop/)
 4. [tr](https://www.thegeekstuff.com/2012/12/linux-tr-command/)
-    
+5. [uniq](https://www.thegeekstuff.com/2013/05/uniq-command-examples/)
+6. [Paste](https://www.theunixschool.com/2012/07/10-examples-of-paste-command-usage-in.html)
 
 

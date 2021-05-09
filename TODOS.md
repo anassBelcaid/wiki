@@ -21,8 +21,8 @@
 
 ## Professor | project:prof +PENDING
 * [ ] Download all the book on the link  #3968c447
-* [o] Application  #577953ff
-    * [ ] Bouncing Balls  #830bfdf0
+* [X] Application  #577953ff
+    * [X] Bouncing Balls  #830bfdf0
 
 
 
@@ -30,7 +30,7 @@
 * [ ] Script Statistic pomo  #996fcb04
 
 ## Scientist | project:scientist +PENDING
-* [ ] Blog on fatal python mistakes  #61d459d4
+* [X] Blog on fatal python mistakes  #61d459d4
 * [ ] Check multiple selection in vim  #aada29f1
 * [ ] repeat things with cron  #1140ce44
 
