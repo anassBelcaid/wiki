@@ -106,6 +106,45 @@ tr  find_character replace_characer < filename
 - `cat file2 | paste -d, file1 -`: same result
 - `cat -d'\n' file1 file2`: contcatnate in a single columns
 
+### Arrays
+
+In bash arrays are created automatically when the following syntax is
+introduced:
+
+```bash
+name[index]=value
+```
+
+
+- `$(name[index])`: to access the element at index **index**.
+- `declare -a arrayname={value1 value2 value3}`: declare and instantiate an
+  element 
+- `declare -a arrayname={'element with space'}`: to add an element with space.
+- `echo $(array[@])`: print the full array.
+- `${#array[@]}`: gives you the lenght of the array.
+- `${#array[3]}`: lenght of the 3 element.
+- `${array[@]:3:2}`: gives **2** elements starting from the **3** index
+- `${array[2]:0:4}`: the fourth first characters of the third element.
+- `${arra[@]/search/replace}` to execute a search replace
+- `array=("${array[@]}" "AIX" "HP-UX")`: to add elements to the array.
+- `unset ${array[3]}`: remove the fourth element in the array. 
+
+
+### Grep
+
+`Grep` command is used to find **pattern** using *regular expressins*.
+
+
+1. `grep leteral expression` : find the literal in the given expression.
+2. `grep literal file1 file2 ` : find the literal in multiple files.
+3. `grep -i `: for insensitive search.
+4. `grep "regular expression"`: to search regular expression.
+5. `grep -w ` to search for a full word and not only a partial find.
+6. `grep -A N`: print **Lines** after the match.
+7. `grep -B N`: print lines before the match.
+8. `grep -r ` search in file recurisevely.
+9. `grep -v` to display only the non matched items.
+10. `grep -c` to count the number of matches
 
 ## Resources
 
@@ -115,5 +154,7 @@ tr  find_character replace_characer < filename
 4. [tr](https://www.thegeekstuff.com/2012/12/linux-tr-command/)
 5. [uniq](https://www.thegeekstuff.com/2013/05/uniq-command-examples/)
 6. [Paste](https://www.theunixschool.com/2012/07/10-examples-of-paste-command-usage-in.html)
+7. [Arrays](www.thegeekstuff.com/2010/06/bash-array-tutorial/)
+8. [Grep examples](https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/)
 
 
