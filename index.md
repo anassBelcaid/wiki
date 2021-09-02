@@ -13,6 +13,8 @@
 ## Linux
 - [Regex](Regex.md)
 - [Tutorial hacker](Tutorial hacker.md)
+- [jekyll](jekyll.md)
+- 
 
 ## Task Warrior
 - [TODOS](TODOS.md)

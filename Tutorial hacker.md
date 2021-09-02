@@ -145,7 +145,20 @@ name[index]=value
 8. `grep -r ` search in file recurisevely.
 9. `grep -v` to display only the non matched items.
 10. `grep -c` to count the number of matches
+11. `grep -l` matches with files
+12. `grep -o` show only the matching string
+13. `grep -n` show line number of the match
 
+
+- [tldp tutorial](https://tldp.org/LDP/abs/html/x23170.html)
+- [useful examples](https://www.folkstalk.com/2012/01/sed-command-in-unix-examples.html)
+- [the geek stuff](https://www.thegeekstuff.com/2009/09/unix-sed-tutorial-printing-file-lines-using-address-and-patterns/)
+
+
+**Examples**:
+
+- `sed -n 'Adress'p filename`
+- `sed -n '/pattern/p' filename`
 ## Resources
 
 1. [quick guide](http://www.panix.com/~elflord/unix/bash-tute.html)
